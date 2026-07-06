@@ -11,11 +11,11 @@ class Solution {
                 high--;
             }
             else if(nums[mid]>=nums[low]&&nums[low]<=nums[high]){
-                min=nums[low];
+                min=nums[mid];
                 high=mid-1;
             }
             else{
-                min=nums[high];
+                min=nums[mid];
                 low=mid+1;
             }
         }
